@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="640.0" spacing="20.0" style="-fx-background-color: #161A30;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.PrimaryControllerMenuitems">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #161A30;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="222.0" layoutY="-4.0" text="Menu items Table" textAlignment="CENTER" textFill="#f0ece5">
+                    <font>
+                        <Font name="Futura Heavy BT" size="29.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="menuIDField" layoutX="30.0" layoutY="51.0" promptText="Enter Menu ID" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="itemNameField" layoutX="30.0" layoutY="87.0" promptText="Enter Item Name" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="descriptionField" layoutX="30.0" layoutY="124.0" promptText="Enter Description" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="priceField" layoutX="191.0" layoutY="69.0" promptText="Enter Price" style="-fx-background-color: #F0ECE5; " />
+                <TextField fx:id="itemIDField" layoutX="191.0" layoutY="105.0" promptText="Enter item ID" style="-fx-background-color: #F0ECE5;" />
+
+                <Button fx:id="insertButton" layoutX="574.0" layoutY="44.0" mnemonicParsing="false" onAction="#InsertMenuitems" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Insert" textFill="#f0ece5" />
+                <Button fx:id="updateButton" layoutX="574.0" layoutY="80.0" mnemonicParsing="false" onAction="#UpdateMenuitems" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Update" textFill="#f0ece5" />
+                <Button fx:id="deleteButton" layoutX="574.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteMenuitems" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Delete" textFill="#f0ece5" />
+                <Button fx:id="refreshButton" layoutX="574.0" layoutY="152.0" mnemonicParsing="false" onAction="#refreshMenuitemsTableView" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #31304D;" text="Refresh" textFill="#f0ece5" />
+                <TableView fx:id="menuitemsTableView" editable="true" layoutY="200.0" prefHeight="200.0" prefWidth="660.0" style="-fx-background-color: #31304D; -fx-border-color: #31304D;">
+                    <columns>
+                        <TableColumn fx:id="menuID" prefWidth="101.43389523029327" text="menuID" />
+                        <TableColumn fx:id="itemName" prefWidth="150.33966064453125" text="itemName" />
+                        <TableColumn fx:id="description" minWidth="0.0" prefWidth="155.77357482910156" text="description" />
+                        <TableColumn fx:id="price" prefWidth="173.88677978515625" text="price" />
+                        <TableColumn fx:id="itemID" prefWidth="74.26416015625" text="itemID" />
+                    </columns>
+                </TableView>
+            <Label layoutX="347.0" layoutY="48.0" text="1. Insert: Enter all necessary data." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="80.0" text="2. Update: Enter menu ID to update" textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="96.0" text="info with new data." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="121.0" text="3. Delete: Enter menu ID to delete." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</VBox>

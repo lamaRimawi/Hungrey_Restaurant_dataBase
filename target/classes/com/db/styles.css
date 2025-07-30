@@ -1,0 +1,80 @@
+.button {
+  -fx-background-color: linear-gradient(to bottom, #85ade6, #4e79b5);
+  -fx-text-fill: #f0ece5;
+  -fx-background-radius: 22;
+  -fx-cursor: hand;
+  cursor: hand;
+}
+
+.button:hover {
+  -fx-background-color: linear-gradient(to bottom, #a6c1f7, #6b9fd0);
+}
+
+.button:pressed {
+  -fx-background-color: linear-gradient(to bottom, #4e79b5, #85ade6);
+}
+
+#loginPane .button {
+  -fx-background-color: #6b3850;
+  -fx-text-fill: #f0ece5;
+}
+
+#login {
+  -fx-background-color: #802f55;
+  -fx-text-fill: #f0ece5;
+  -fx-background-radius: 22;
+}
+
+#loginPane .button:hover {
+  -fx-background-color: #815d6e;
+}
+
+#loginPane .button:pressed {
+  -fx-background-color: #411b2c;
+}
+
+.text-field {
+  -fx-prompt-text-fill: #afafb2;
+}
+
+.table-cell {
+  -fx-alignment: CENTER;
+}
+
+#BGMain {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #256da9,
+    #305c80,
+    #11283a
+  );
+}
+
+#navbar Button {
+  -fx-background-radius: 0;
+  -fx-background-color: transparent;
+  -fx-text-fill: #000000;
+}
+
+#navbar .button:hover {
+  -fx-background-color: #ffeebda4;
+}
+
+#navbar .button:pressed {
+  -fx-background-color: #6c5e34a4;
+}
+
+#grid Button {
+  -fx-content-display: top;
+  -fx-background-radius: 22;
+  -fx-background-color: transparent;
+  -fx-text-fill: #000000;
+}
+
+#grid .button:hover {
+  -fx-background-color: #ffeebda4;
+}
+
+#grid .button:pressed {
+  -fx-background-color: #6c5e34a4;
+}

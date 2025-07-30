@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.db.CashController"
+            prefHeight="600" prefWidth="800">
+
+    <left>
+        <VBox spacing="10" alignment="CENTER_LEFT">
+            <!-- Menu Options as Buttons -->
+            <Button text="Appetizers" onAction="#showAppetizers"/>
+            <Button text="Main Courses" onAction="#showMainCourses"/>
+            <Button text="Desserts" onAction="#showDesserts"/>
+            <Button text="Drinks" onAction="#showDrinks"/>
+            <!-- Add more menu options as needed -->
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <!-- Items Display -->
+            <Button fx:id="item1Button" text="Item 1" onAction="#addItemToOrder"/>
+            <Button fx:id="item2Button" text="Item 2" onAction="#addItemToOrder"/>
+            <Button fx:id="item3Button" text="Item 3" onAction="#addItemToOrder"/>
+            <!-- Add more items as needed -->
+        </VBox>
+    </center>
+
+    <right>
+        <VBox spacing="10" alignment="CENTER_RIGHT">
+            <Label text="Order Summary" style="-fx-font-size: 18px;"/>
+            <!-- Display Selected Items and Prices -->
+            <VBox fx:id="orderSummaryVBox" spacing="5">
+                <!-- Items and Prices will be added dynamically -->
+            </VBox>
+            <HBox>
+                <Label text="Total: " style="-fx-font-weight: bold;"/>
+                <Label fx:id="totalLabel" style="-fx-font-weight: bold;"/>
+            </HBox>
+            <Button text="Pay" onAction="#pay"/>
+        </VBox>
+    </right>
+
+</BorderPane>

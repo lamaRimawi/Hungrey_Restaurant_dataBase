@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BGMain" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(    to bottom right,    #256da9,    #305c80,    #11283a  );;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.cashController">
+   <children>
+      <AnchorPane layoutX="65.0" layoutY="60.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1150.0" scaleX="1.06" scaleY="1.1" style="-fx-background-radius: 22; -fx-background-color: f0ece5;">
+         <effect>
+            <DropShadow height="90.0" radius="44.5" spread="0.13" width="90.0">
+               <color>
+                  <Color opacity="0.6624571681022644" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="136.0" style="-fx-background-color: e9d3ad; -fx-background-radius: 22 0 0 22;">
+               <children>
+                  <AnchorPane layoutY="23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="557.0" prefWidth="139.0">
+                     <children>
+                        <VBox fx:id="navbar" layoutY="1.0" prefHeight="552.0" prefWidth="146.0">
+                           <children>
+                              <Button fx:id="navBtn" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="306.0" style="-fx-background-color: #6c5e34a4;" text="Cash">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn1" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="306.0" text="Orders">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn11" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="306.0" text="Inventory">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn12" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="306.0" text="Employees">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn13" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="306.0" text="Daily Report" wrapText="true">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn14" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="306.0" text="Monthly Report" wrapText="true">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn15" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="153.0" text="Annual Report" wrapText="true">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="navBtn16" alignment="BASELINE_LEFT" lineSpacing="1.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="306.0" text="Log Out">
+                                 <padding>
+                                    <Insets left="65.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox layoutX="-7.0" layoutY="6.0" prefHeight="550.0" prefWidth="72.0">
+                           <children>
+                              <ImageView fitHeight="55.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/cashier_2765981.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="61.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/order.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="68.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/placeOrder.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="66.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/employees.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="69.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/report1.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="68.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/report2.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="68.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/report3.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="68.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                                 <image>
+                                    <Image url="@../mainMenu/logOUt.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="146.0" prefHeight="600.0" prefWidth="1000.0">
+               <children>
+                  <BorderPane prefHeight="600.0" prefWidth="1004.0">
+                     <right>
+                        <AnchorPane prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #00000010; -fx-background-radius: 0 22 22 0;" translateX="1.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="name" layoutX="9.0" layoutY="22.0" promptText="Name" />
+                              <TextField fx:id="phone" layoutX="9.0" layoutY="57.0" promptText="Phone" />
+                              <TextField fx:id="address" layoutX="9.0" layoutY="92.0" promptText="Address" />
+                              <Button fx:id="clearBtn" layoutX="175.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Clear">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <MenuButton layoutX="176.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Order Type">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Dine in" />
+                                  <MenuItem mnemonicParsing="false" text="Take Away" />
+                                    <MenuItem mnemonicParsing="false" text="Delivery" />
+                                </items>
+                              </MenuButton>
+                              <MenuButton layoutX="176.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment Method">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Cash" />
+                                    <MenuItem mnemonicParsing="false" text="Visa" />
+                                 </items>
+                              </MenuButton>
+                              <TableView fx:id="tableItems" layoutX="44.0" layoutY="142.0" prefHeight="325.0" prefWidth="248.0">
+                                <columns>
+                                  <TableColumn fx:id="itemTitle" prefWidth="164.16370391845703" text="Item" />
+                                  <TableColumn fx:id="itemPrice" prefWidth="83.98722839355469" text="Price" />
+                                </columns>
+                              </TableView>
+                              <Text layoutX="41.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:" wrappingWidth="98.5113410949707">
+                                 <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalPrice" layoutX="196.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0" wrappingWidth="98.5113410949707">
+                                 <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </right>
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <top>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text layoutX="11.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER: ">
+                                       <font>
+                                          <Font name="Arial Bold" size="23.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="UserName" layoutX="86.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font name="Arial Bold" size="23.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator layoutX="3.0" layoutY="52.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                                    <Text layoutX="10.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENUES:">
+                                       <font>
+                                          <Font name="Arial Bold" size="23.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="menuBtn1" layoutX="10.0" layoutY="106.0" mnemonicParsing="false" onAction="#menuOne" prefHeight="65.0" prefWidth="156.0" text="Chicken &amp; More Combos" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Futura-Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="menuBtn2" onAction="#menuTwo" layoutX="174.0" layoutY="106.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" text="Hungers's Drinks" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Futura-Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="menuBtn3" onAction="#menuThree" layoutX="338.0" layoutY="106.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="147.0" text="Hungers's Fries" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Futura-Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="menuBtn4" onAction="#menuFour" layoutX="493.0" layoutY="105.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="168.0" text="Hungers's Sides &amp; Sweets" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Futura-Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Separator layoutX="3.0" layoutY="194.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                                 </children>
+                              </AnchorPane>
+                           </top>
+                           <center>
+                              <GridPane layoutY="-20.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="262.0" prefWidth="669.0" translateY="-70.0" BorderPane.alignment="CENTER">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints prefHeight="50.0" vgrow="NEVER" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ITEMS:">
+                                       <font>
+                                          <Font name="Arial Bold" size="23.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="7.0" />
+                                       </GridPane.margin>
+                                    </Text>
+                                    <Button fx:id="itemBtn1" onAction="#itemBtnPressed" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn2" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn3" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn4" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn5" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn6" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn7" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="itemBtn8" onAction="#itemBtnPressed" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="156.0" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

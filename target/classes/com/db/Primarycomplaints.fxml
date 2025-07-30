@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="640.0" spacing="20.0" style="-fx-background-color: #161A30;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.PrimaryControllerComplaints">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #161A30;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="222.0" layoutY="-4.0" text="Complaints Table" textAlignment="CENTER" textFill="#f0ece5">
+                    <font>
+                        <Font name="Futura Heavy BT" size="29.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="complaintIDField" layoutX="30.0" layoutY="51.0" promptText="Enter Complaint ID" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="customerIDField" layoutX="30.0" layoutY="87.0" promptText="Enter Customer ID" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="dateField" layoutX="30.0" layoutY="124.0" promptText="Enter date" style="-fx-background-color: #F0ECE5;" />
+                <TextField fx:id="descriptionField" layoutX="191.0" layoutY="69.0" promptText="Enter description" style="-fx-background-color: #F0ECE5; " />
+                
+
+                <Button fx:id="insertButton" layoutX="574.0" layoutY="44.0" mnemonicParsing="false" onAction="#InsertComplaints" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Insert" textFill="#f0ece5" />
+                <Button fx:id="updateButton" layoutX="574.0" layoutY="80.0" mnemonicParsing="false" onAction="#UpdateComplaints" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Update" textFill="#f0ece5" />
+                <Button fx:id="deleteButton" layoutX="574.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteComplaints" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #31304D;" text="Delete" textFill="#f0ece5" />
+                <Button fx:id="refreshButton" layoutX="574.0" layoutY="152.0" mnemonicParsing="false" onAction="#refreshComplaintsTableView" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #31304D;" text="Refresh" textFill="#f0ece5" />
+                <TableView fx:id="complaintsTableView" editable="true" layoutY="200.0" prefHeight="200.0" prefWidth="660.0" style="-fx-background-color: #31304D; -fx-border-color: #31304D;">
+                    <columns>
+                        <TableColumn fx:id="complaintID" prefWidth="101.43389523029327" text="Complaint ID" />
+                        <TableColumn fx:id="customerID" prefWidth="150.33966064453125" text="Customer ID" />
+                        <TableColumn fx:id="date" minWidth="0.0" prefWidth="155.77357482910156" text="Date" />
+                        <TableColumn fx:id="description" prefWidth="173.88677978515625" text="Description" />
+                        
+                    </columns>
+                </TableView>
+            <Label layoutX="347.0" layoutY="48.0" text="1. Insert: Enter all necessary data." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="80.0" text="2. Update: Enter complaint ID to update" textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="96.0" text="info with new data." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="121.0" text="3. Delete: Enter complaint ID to delete." textAlignment="CENTER" textFill="#979694">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</VBox>
